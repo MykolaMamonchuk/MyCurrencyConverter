@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="UserDepositCCell" customModule="MyCurrencyConverter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="281" height="141"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="281" height="141"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EPh-07-rce">
+                        <rect key="frame" x="0.0" y="0.0" width="281" height="141"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAl-k5-hgt">
+                                <rect key="frame" x="0.0" y="0.0" width="281" height="141"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" name="Title2"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="zAl-k5-hgt" secondAttribute="bottom" id="XHb-YR-Lg3"/>
+                            <constraint firstAttribute="trailing" secondItem="zAl-k5-hgt" secondAttribute="trailing" id="aBB-US-ZcC"/>
+                            <constraint firstItem="zAl-k5-hgt" firstAttribute="leading" secondItem="EPh-07-rce" secondAttribute="leading" id="o7S-dp-PKV"/>
+                            <constraint firstItem="zAl-k5-hgt" firstAttribute="top" secondItem="EPh-07-rce" secondAttribute="top" id="wZW-mB-fFL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="EPh-07-rce" secondAttribute="bottom" id="77p-f8-yvJ"/>
+                <constraint firstAttribute="trailing" secondItem="EPh-07-rce" secondAttribute="trailing" id="Mcn-DK-FCU"/>
+                <constraint firstItem="EPh-07-rce" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="V5a-qb-4dF"/>
+                <constraint firstItem="EPh-07-rce" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="twh-QH-F7h"/>
+            </constraints>
+            <size key="customSize" width="281" height="141"/>
+            <connections>
+                <outlet property="balanceLBL" destination="zAl-k5-hgt" id="448-xC-eCC"/>
+            </connections>
+            <point key="canvasLocation" x="314.61538461538458" y="52.962085308056871"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Title2">
+            <color red="0.17599999904632568" green="0.18400000035762787" blue="0.17599999904632568" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

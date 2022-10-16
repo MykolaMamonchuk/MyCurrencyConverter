@@ -1,0 +1,45 @@
+PODS:
+  - Alamofire (5.1.0)
+  - CodableAlamofire (1.2.1):
+    - Alamofire (~> 5.1.0)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - Realm (10.32.0):
+    - Realm/Headers (= 10.32.0)
+  - Realm/Headers (10.32.0)
+  - RealmSwift (10.32.0):
+    - Realm (= 10.32.0)
+  - SwiftFormat/CLI (0.50.2)
+  - SwiftLint (0.49.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - CodableAlamofire
+  - NVActivityIndicatorView (~> 5.1.1)
+  - RealmSwift (~> 10)
+  - SwiftFormat/CLI (~> 0.50.2)
+  - SwiftLint (~> 0.49.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CodableAlamofire
+    - NVActivityIndicatorView
+    - Realm
+    - RealmSwift
+    - SwiftFormat
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  CodableAlamofire: 3532ececac18593b300d775f2a51feca2f83a2f1
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  Realm: a00e93347b8d26d372c7a82f6c0b08d6536a21c8
+  RealmSwift: fe09c29ca409f8f905fe4086f2a52936193f2e3d
+  SwiftFormat: 710117321c55c82675c0dc03055128efbb13c38f
+  SwiftLint: 32ee33ded0636d0905ef6911b2b67bbaeeedafa5
+
+PODFILE CHECKSUM: 7ec24ea191679a953f39ee069db3e5db3e7d117a
+
+COCOAPODS: 1.11.3

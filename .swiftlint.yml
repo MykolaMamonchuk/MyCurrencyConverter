@@ -1,0 +1,112 @@
+disabled_rules:
+  - force_cast
+  - trailing_comma
+  # - function_body_length
+#  - trailing_newline
+#  - opening_brace
+#  - empty_count
+#  - comma
+#  - colon
+#  - type_name
+#  - variable_name_min_length
+#  - trailing_semicolon
+#  - force_try
+#  - nesting
+#  - variable_name
+#  - conditional_binding_cascade
+#  - variable_name_max_length
+#  - operator_whitespace
+#  - control_statement
+#  - legacy_constant
+#  - line_length
+#  - return_arrow_whitespace
+#  - trailing_whitespace
+#  - closing_brace
+#  - statement_position
+#  - type_body_length
+#  - file_length
+#  - leading_whitespace
+#  - legacy_constructor
+  - todo
+  - valid_docs
+  - missing_docs
+
+opt_in_rules: # some rules are only opt-in
+#  - empty_count
+  - missing_docs
+  - cyclomatic_complexity
+  # Find all the available rules by running:
+  # swiftlint rules
+
+whitelist_rules:
+
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+  - Pods
+  - MyCurrencyConverter/Utils
+  - MyCurrencyConverter/Networking/Models
+  - MyCurrencyConverterTests
+  - MyCurrencyConverterUITests
+
+included: # paths to include during linting. `--path` is ignored if present.
+  # - Sources
+  # - Messages
+
+# configurable rules can be customized from this configuration file
+# binary rules can set their severity level
+# force_cast: warning # implicitly
+force_try:
+  severity: warning # explicitly
+
+# rules that have both warning and error levels, can set just the warning level
+# implicitly
+line_length:
+  warning: 168
+  error: 512
+  ignores_function_declarations: true
+  ignores_comments: true
+  ignores_interpolated_strings: true
+  ignores_urls: true
+
+# they can set both implicitly with an array
+type_body_length:
+  - 1400 # warning
+  - 2000 # error
+
+function_body_length:
+  - 400 # warning
+  - 1500 # error
+
+large_tuple:
+  warning: 8
+  error: 10
+
+# or they can set both explicitly
+file_length:
+  warning: 2000
+  error: 4000
+
+# naming rules can set warnings/errors for min_length and max_length
+# additionally they can set excluded names
+type_name:
+  min_length: 1 # only warning
+  max_length: # warning and error
+    warning: 60
+    error: 80
+  excluded: iPhone # excluded via string
+
+variable_name:
+  min_length: 1 # only warning
+  max_length: # warning and error
+    warning: 50
+    error: 80
+
+function_parameter_count:
+  warning: 7
+  error: 10
+
+cyclomatic_complexity:
+  warning: 60 # 10
+  error: 61 # 15
+
+reporter: "xcode" # reporter type (xcode, json, csv, checkstyle)
